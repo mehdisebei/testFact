@@ -1,0 +1,33 @@
+header{
+    padding: 20px 0;
+}
+
+
+.card-text{
+    display: block; /* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;
+    line-height: 1.8em;
+
+}
+.description{
+    padding-top: 70px;
+
+}
+
+
+section.container{
+    margin-top: 15px;
+}
+
+a[href].btn-primary{
+    outline:none;
+}
+
+a.logo{
+    height:55px;
+    width:350px;
+    background: url("http://www.chanel.com/img/logo_chanel.svg") scroll no-repeat top left;
+}

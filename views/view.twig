@@ -1,0 +1,31 @@
+{% extends 'template.twig' %}
+
+{% block content %}
+<title>{{ product.name }}</title>
+<body>
+    <header class="bg-dark" role="header">
+        <div class="container">
+            <h1 class="text-center text-light">{{ product.name }}</h1>
+        </div>
+    </header>
+    <section class="container" role="application">
+        <div class="row">
+            <div class="col-4">
+                <figure>
+                    <img class="card-img-top" src="/img/{{ product.image }}" alt="{{ product.description }}"/>
+
+                </figure>
+            </div>
+            <div class="col-8 description">
+                <h1>{{ product.name }}</h1>
+                <p>{{ product.description }}</p>
+                <p>Stock level: {{ product.stock }}</p>
+                <a class="btn btn-primary" href="/products/cart/{{ product.id }}" alt={{ product.description }}>Buy</a>
+           </div>
+        </div>
+    </section>
+    <div class="text-center" role="footer">
+        <a href="http://www.chanel.com" class="logo"> </a>
+    </div>
+</body>
+    {% endblock %}
